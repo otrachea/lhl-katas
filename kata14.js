@@ -19,7 +19,7 @@ const calculateChange = function(total, cash) {
     },
     {
       'name': 'oneDollar',
-      'amount': 100 
+      'amount': 100
     },
     {
       'name': 'quarter',
@@ -37,7 +37,7 @@ const calculateChange = function(total, cash) {
       'name': 'penny',
       'amount': 1
     }
-  ]
+  ];
 
   let result = {};
   let change = cash - total;

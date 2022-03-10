@@ -3,7 +3,7 @@ const instructorWithLongestName = function(instructors) {
   let longest = instructors[0];
 
   instructors.forEach(instructor => {
-    if (longest.name.length < instructor.name.length) longest = instructor
+    if (longest.name.length < instructor.name.length) longest = instructor;
   });
 
   return longest;

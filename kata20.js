@@ -1,4 +1,4 @@
-const blocksAway = function (directions) {
+const blocksAway = function(directions) {
   let dist = { 'east': 0, 'north': 0 };
   let currentDirection = 0;
   (directions[0] === "right") ? currentDirection += 1 : currentDirection = 0;

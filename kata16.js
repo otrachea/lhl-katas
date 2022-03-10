@@ -1,4 +1,4 @@
-function camelCase(input) {
+const camelCase = input => {
   let s = '';
 
   for (let i = 0; i < input.length; i++) {
@@ -11,25 +11,24 @@ function camelCase(input) {
   }
 
   return s;
-}
+};
 
-function pascal(input) {
+const pascal = input => {
   input = camelCase(input);
   return input.charAt(0).toUpperCase() + input.slice(1);
-}
+};
 
-function snakeKebabHelper(input, type) {
+const snakeKebabHelper = (input, type) => {
   let s = '';
   input.split('').forEach(char => {
     if (char === ' ') {
       (type === 'snake') ? s += '_' : s += '-';
-    }
-    else s += char;
+    } else s += char;
   });
   return s;
-}
+};
 
-function title(input) {
+const title = input => {
   input = input.charAt(0).toUpperCase() + input.slice(1);
 
   for (let i = 1; i < input.length; i++) {
@@ -39,9 +38,9 @@ function title(input) {
   }
 
   return input;
-}
+};
 
-function vowelConsonant(input, type) {
+const vowelConsonant = (input, type) => {
   for (let i = 0; i < input.length; i++) {
     if (type === 'vowel') {
       if (!('aieou'.includes(input.charAt(i)))) {
@@ -54,9 +53,9 @@ function vowelConsonant(input, type) {
     }
   }
   return input;
-}
+};
 
-const makeCase = function (input, case1) {
+const makeCase = (input, case1) => {
 
   if (input.length === 0) return input;
 
@@ -78,7 +77,7 @@ const makeCase = function (input, case1) {
 
   return s;
 
-}
+};
 
 
 console.log(makeCase("this is a string", "camel"));

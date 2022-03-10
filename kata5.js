@@ -8,7 +8,7 @@ const urlEncode = function(text) {
     } else {
       s += char;
     }
-  });  
+  });
 
   return s;
 };

@@ -4,7 +4,7 @@ const numberOfVowels = function(data) {
 
   data.split('').forEach(char => {
     if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') vowels++;
-  });  
+  });
 
   return vowels;
 

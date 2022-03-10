@@ -1,4 +1,4 @@
-const camelCase = function (input) {
+const camelCase = function(input) {
 
   let s = '';
 

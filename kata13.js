@@ -30,10 +30,10 @@ const talkingCalendar = function(date) {
   } else if (info[2][1] === '3') {
     s += '3rd, ';
   } else {
-    s += info[2][1] + 'th, '
+    s += info[2][1] + 'th, ';
   }
 
-  s += info[0]
+  s += info[0];
 
   return s;
 };

@@ -1,4 +1,4 @@
-const sumLargestNumbers = function (data) {
+const sumLargestNumbers = function(data) {
 
   let sum = 0;
 

@@ -3,10 +3,10 @@ const repeatNumbers = function(data) {
   let s = '';
   data.forEach((pair, index) => {
     for (let i = 0; i < pair[1]; i++) {
-      s += pair[0];  
+      s += pair[0];
     }
 
-    if (data[index + 1] !== undefined) s+= ', ';
+    if (data[index + 1] !== undefined) s += ', ';
 
   });
 

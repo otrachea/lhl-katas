@@ -8,7 +8,7 @@ const multiplicationTable = function(maxValue) {
       s += (j + 1) * (i + 1) + ' ';
 
     }
-    if (i != maxValue - 1) s += '\n';
+    if (i !== maxValue - 1) s += '\n';
   }
 
   return s;

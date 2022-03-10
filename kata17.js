@@ -1,4 +1,4 @@
-const urlDecode = function (text) {
+const urlDecode = function(text) {
 
   let temp = '', key = '', value = '';
   let result = {};

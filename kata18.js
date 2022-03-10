@@ -1,9 +1,9 @@
-const squareCode = function (message) {
+const squareCode = function(message) {
 
   message = message.replace(/ /g, '');
   // let s = '';
   let s = [];
-  let columns = Math.floor(Math.sqrt(message.length)), rows = Math.ceil(Math.sqrt(message.length));
+  let rows = Math.ceil(Math.sqrt(message.length));
 
   for (let j = 0; j < rows; j++) {
     s.push([]);
